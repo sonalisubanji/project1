@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs & Courses | education.in</title>
+  <meta name="description" content="Explore world-class undergraduate, postgraduate, and executive degrees at education.in. Accredited curricula in AI, Computer Science, Business, and Design.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-banner">
+    <div class="container top-banner-content">
+      <div class="top-banner-badge">
+        <i class="fa-solid fa-graduation-cap"></i> 2026 Academic Catalog & Admissions Directory
+      </div>
+      <div class="top-banner-links">
+        <a href="tel:+9118005550199"><i class="fa-solid fa-phone"></i> +91 1800-555-0199</a>
+        <a href="mailto:admissions@education.in"><i class="fa-solid fa-envelope"></i> admissions@education.in</a>
+        <a href="contact.html"><i class="fa-solid fa-user-plus"></i> Request Prospectus</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="mainHeader">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo" aria-label="education.in Home">
+          <div class="logo-crest">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="logo-text-group">
+            <div class="logo-name">education<span>.in</span></div>
+            <div class="logo-tagline">Excellence in Higher Learning</div>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="courses.html" class="nav-link active">Programs & Courses</a></li>
+          <li><a href="contact.html" class="nav-link">Admissions & Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn-secondary btn-sm"><i class="fa-regular fa-user"></i> Student Portal</a>
+          <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Apply Now</a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="section" style="background: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 100%); color: var(--white); padding: 4.5rem 0;">
+    <div class="container">
+      <div style="max-width: 800px;">
+        <span class="badge badge-gold" style="margin-bottom: 1rem;"><i class="fa-solid fa-compass"></i> Academic Directory</span>
+        <h1 style="color: var(--white); font-size: 3.2rem; margin-bottom: 1rem;">Future-Proof Degrees & Programs</h1>
+        <p style="color: var(--neutral-300); font-size: 1.15rem; line-height: 1.7;">
+          Engineered in collaboration with leading scientific councils and global enterprises. Each curriculum at <strong>education.in</strong> blends rigorous theory with intensive lab application.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Explorer Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Search and Filter Controls -->
+      <div class="programs-filter-wrapper">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="courseSearchInput" placeholder="Search degrees, topics, keywords..." aria-label="Search courses">
+        </div>
+
+        <div class="filter-buttons" id="filterBtnGroup">
+          <button class="filter-btn active" data-filter="all">All Programs (<span id="countAll">9</span>)</button>
+          <button class="filter-btn" data-filter="ai-computing">AI & Computing</button>
+          <button class="filter-btn" data-filter="business">Management & MBA</button>
+          <button class="filter-btn" data-filter="datascience">Data Science & FinTech</button>
+          <button class="filter-btn" data-filter="design">Design & HCI</button>
+        </div>
+      </div>
+
+      <!-- Live Course Results Summary -->
+      <div style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <p style="font-size: 0.95rem; color: var(--neutral-600); margin-bottom: 0;" id="filterStatusText">
+          Showing <strong>9 programs</strong> across all academic departments.
+        </p>
+        <span class="badge badge-emerald"><i class="fa-solid fa-circle-check"></i> Fall 2026 Seats Available</span>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div class="courses-grid" id="coursesGrid">
+
+        <!-- Program 1 -->
+        <div class="course-card" data-category="ai-computing" data-keywords="btech artificial intelligence machine learning python deep learning robotics autonomous">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Undergraduate (B.Tech)</span>
+              <span class="badge badge-gold"><i class="fa-solid fa-award"></i> ABET Accredited</span>
+            </div>
+            <h3 class="course-title">B.Tech in Artificial Intelligence & Machine Learning</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 Years Full-time</span>
+              <span><i class="fa-solid fa-location-dot"></i> Bengaluru Campus</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Master computer vision, large language models, reinforcement learning, and distributed AI engineering with GPU supercomputing cluster access.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> NVIDIA DGX Lab Access</li>
+              <li><i class="fa-solid fa-circle-check"></i> 8-Month Paid Corporate Internship</li>
+              <li><i class="fa-solid fa-circle-check"></i> Average CTC: &#8377;18.6 LPA</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;2,85,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="aiml">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="course-card" data-category="ai-computing" data-keywords="cybersecurity cyber security cloud infrastructure defensive ethical hacking computer science btech">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Undergraduate (B.Tech)</span>
+              <span class="badge badge-emerald"><i class="fa-solid fa-shield"></i> High Security Demand</span>
+            </div>
+            <h3 class="course-title">B.Tech in Cybersecurity & Cloud Systems</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 Years Full-time</span>
+              <span><i class="fa-solid fa-location-dot"></i> Bengaluru Campus</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Specialized engineering track covering red-team penetration testing, cryptographic engineering, zero-trust cloud architecture, and cyber law.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Cyber Range Simulation Arena</li>
+              <li><i class="fa-solid fa-circle-check"></i> AWS & Azure Advanced Certifications</li>
+              <li><i class="fa-solid fa-circle-check"></i> 100% Placement with Global Security Firms</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;2,70,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="cyber">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="course-card" data-category="business" data-keywords="mba master business administration digital strategy executive enterprise silicon valley management">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Postgraduate (MBA)</span>
+              <span class="badge badge-gold"><i class="fa-solid fa-star"></i> AACSB Aligned</span>
+            </div>
+            <h3 class="course-title">Global Executive MBA in Digital Strategy</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 Years (Hybrid / Full-Time)</span>
+              <span><i class="fa-solid fa-location-dot"></i> Gurugram / Silicon Valley</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Accelerate your trajectory to leadership. Study enterprise transformation, venture incubation, algorithmic marketing, and global macroeconomics.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Silicon Valley 2-Week Residency</li>
+              <li><i class="fa-solid fa-circle-check"></i> 1-on-1 Mentorship with Fortune 500 Leaders</li>
+              <li><i class="fa-solid fa-circle-check"></i> Average CTC: &#8377;24.2 LPA</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;4,50,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="mba">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="course-card" data-category="business" data-keywords="bba bachelor business administration international trade finance economics entrepreneurship">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Undergraduate (BBA)</span>
+              <span class="badge badge-emerald"><i class="fa-solid fa-globe"></i> Global Exchange</span>
+            </div>
+            <h3 class="course-title">BBA in International Business & FinTech</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 3 Years Full-time</span>
+              <span><i class="fa-solid fa-location-dot"></i> Gurugram Campus</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Gain foundational mastery in international trade, corporate financial analysis, venture capital fundraising, and decentralized finance.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Optional 1-Year UK University Dual Degree</li>
+              <li><i class="fa-solid fa-circle-check"></i> Student-Run Venture Capital Fund</li>
+              <li><i class="fa-solid fa-circle-check"></i> Corporate Internships in Mumbai & London</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;2,10,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="bba">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 5 -->
+        <div class="course-card" data-category="datascience" data-keywords="msc data science quantitative finance analytics big data algorithmic trading econometrics">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Postgraduate (M.Sc)</span>
+              <span class="badge badge-gold"><i class="fa-solid fa-chart-line"></i> Top Placement</span>
+            </div>
+            <h3 class="course-title">M.Sc in Data Science & Quantitative Finance</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 Years Full-time</span>
+              <span><i class="fa-solid fa-location-dot"></i> Mumbai Campus</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Combine statistical rigorous modeling, stochastic calculus, neural forecasting, and algorithmic execution on dedicated Bloomberg Terminals.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> 12 Terminal Bloomberg Trading Room</li>
+              <li><i class="fa-solid fa-circle-check"></i> Joint Certification with Quantitative Hedge Funds</li>
+              <li><i class="fa-solid fa-circle-check"></i> Highest CTC: &#8377;38.0 LPA</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;3,20,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="datasci">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 6 -->
+        <div class="course-card" data-category="datascience" data-keywords="data analytics business intelligence python sql visualization powerbi machine learning bsc">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Undergraduate (B.Sc Hons)</span>
+              <span class="badge badge-blue">Applied Science</span>
+            </div>
+            <h3 class="course-title">B.Sc (Hons) in Applied Data Analytics & AI</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 3 Years Full-time</span>
+              <span><i class="fa-solid fa-location-dot"></i> Bengaluru Campus</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Learn end-to-end data pipelines, modern data warehousing with Snowflake and Databricks, business intelligence, and applied statistical modeling.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Live Client Datasets in Capstones</li>
+              <li><i class="fa-solid fa-circle-check"></i> Tableau & Snowflake Certified Faculty</li>
+              <li><i class="fa-solid fa-circle-check"></i> 96.8% Placement in Analytics Consultancies</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;2,25,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="bscdata">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 7 -->
+        <div class="course-card" data-category="design" data-keywords="bdes user experience ux ui design interaction human computer interaction product design">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Undergraduate (B.Des)</span>
+              <span class="badge badge-gold"><i class="fa-solid fa-pen-nib"></i> Studio Led</span>
+            </div>
+            <h3 class="course-title">B.Des in UX Architecture & Interaction Design</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 4 Years Full-time</span>
+              <span><i class="fa-solid fa-location-dot"></i> Bengaluru Campus</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Master design thinking, cognitive human ergonomics, spatial computing interfaces, and design systems for enterprise software and consumer applications.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> VR/AR Prototyping Laboratory</li>
+              <li><i class="fa-solid fa-circle-check"></i> Portfolio Mentorship by Senior Design Directors</li>
+              <li><i class="fa-solid fa-circle-check"></i> Average Placement Package: &#8377;16.5 LPA</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;2,60,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="bdes">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 8 -->
+        <div class="course-card" data-category="ai-computing" data-keywords="mtech robotics mechatronics autonomous systems sensors embedded ai iot control">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Postgraduate (M.Tech)</span>
+              <span class="badge badge-emerald"><i class="fa-solid fa-robot"></i> Research Track</span>
+            </div>
+            <h3 class="course-title">M.Tech in Robotics & Autonomous Hardware</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 2 Years Full-time</span>
+              <span><i class="fa-solid fa-location-dot"></i> Bengaluru Campus</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">Advanced engineering in sensor fusion, SLAM algorithms, embedded micro-controllers, drone kinematics, and industrial cobot automation.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> 5,000 sq ft Advanced Robotics Bay</li>
+              <li><i class="fa-solid fa-circle-check"></i> Funded Defense & Aerospace Research Grants</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dual Publication Requirement</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;2,90,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="robotics">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 9 -->
+        <div class="course-card" data-category="business" data-keywords="executive diploma health tech healthcare administration digital hospital leadership management">
+          <div class="course-card-top">
+            <div class="course-badges-row">
+              <span class="badge badge-blue">Executive Diploma</span>
+              <span class="badge badge-blue">Working Professionals</span>
+            </div>
+            <h3 class="course-title">Post-Graduate Diploma in Healthcare Leadership</h3>
+            <div class="course-meta">
+              <span><i class="fa-regular fa-clock"></i> 1 Year Weekend / Hybrid</span>
+              <span><i class="fa-solid fa-location-dot"></i> Gurugram / Virtual</span>
+            </div>
+          </div>
+          <div class="course-card-body">
+            <p class="course-description">For physicians, hospital administrators, and biotech executives seeking expertise in modern health informatics, hospital ops, and regulatory ethics.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Case Studies with Top Hospital Chains</li>
+              <li><i class="fa-solid fa-circle-check"></i> Telehealth & AI Diagnostics Integration</li>
+              <li><i class="fa-solid fa-circle-check"></i> Flexible Weekend Schedule</li>
+            </ul>
+            <div class="course-card-footer">
+              <div class="course-fee">
+                Tuition per annum
+                <strong>&#8377;1,85,000</strong>
+              </div>
+              <button class="btn btn-primary btn-sm view-curriculum-btn" data-course="health">
+                View Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No Results State -->
+      <div id="noResultsBox" style="display: none; text-align: center; padding: 4rem 2rem; background: var(--white); border-radius: var(--radius-lg); border: 1px dashed var(--neutral-300); margin-top: 2rem;">
+        <i class="fa-solid fa-circle-exclamation" style="font-size: 3rem; color: var(--neutral-400); margin-bottom: 1rem;"></i>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">No programs match your search</h3>
+        <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Try modifying your keywords or clear your active category filters.</p>
+        <button class="btn btn-secondary" id="resetSearchBtn">Clear All Filters</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Accreditation & Standards Notice -->
+  <section class="section section-neutral">
+    <div class="container">
+      <div style="background: var(--white); border-radius: var(--radius-xl); border: 1px solid var(--neutral-200); padding: 3rem; box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <span class="badge badge-emerald" style="margin-bottom: 0.75rem;"><i class="fa-solid fa-shield-halved"></i> Statutory Compliance</span>
+          <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Globally Recognized Credentials</h2>
+          <p style="color: var(--neutral-600); line-height: 1.7;">
+            Every degree awarded by <strong>education.in</strong> adheres to UGC Choice-Based Credit System (CBCS) standards and aligns with the Washington Accord for global engineering equivalence.
+          </p>
+          <ul class="feature-list" style="margin-top: 1rem;">
+            <li><i class="fa-solid fa-check"></i> Eligible for higher studies across US, UK, Canada, & EU</li>
+            <li><i class="fa-solid fa-check"></i> Transparent transcript evaluation with WES compliance</li>
+            <li><i class="fa-solid fa-check"></i> Digital blockchain verifiable academic credentials</li>
+          </ul>
+        </div>
+        <div style="background: var(--neutral-50); border: 1px solid var(--neutral-200); border-radius: var(--radius-lg); padding: 2rem;">
+          <h4 style="margin-bottom: 1rem; color: var(--blue-900);">Speak with an Academic Advisor</h4>
+          <p style="font-size: 0.9rem; color: var(--neutral-600); margin-bottom: 1.5rem;">
+            Unsure which degree fits your professional aspirations? Our career counselors provide free, non-binding guidance on prerequisites, cutoffs, and career outlooks.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-comments"></i> Book Free Counseling</a>
+            <a href="tel:+9118005550199" class="btn btn-secondary btn-sm"><i class="fa-solid fa-phone"></i> Call 1800-555-0199</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Modal Dialog -->
+  <div class="modal-overlay" id="curriculumModal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-blue" id="modalBadge">Syllabus Details</span>
+          <h3 id="modalCourseTitle" style="margin-top: 0.25rem; font-size: 1.35rem;">Curriculum Outline</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalContent">
+        <!-- Dynamically injected -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="logo-crest"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="logo-text-group">
+              <div class="logo-name" style="color: var(--white);">education<span style="color: var(--blue-400);">.in</span></div>
+              <div class="logo-tagline" style="color: var(--neutral-400);">Excellence in Higher Learning</div>
+            </div>
+          </a>
+          <p>
+            <strong>education.in</strong> is a premier statutory institution established under the Higher Education Charter. Dedicated to pioneering future technologies, humanities, and commercial leadership.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Programs</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html">B.Tech Artificial Intelligence</a></li>
+            <li><a href="courses.html">Global Executive MBA</a></li>
+            <li><a href="courses.html">M.Sc Data Science & FinTech</a></li>
+            <li><a href="courses.html">B.Des UX & Media Systems</a></li>
+            <li><a href="courses.html">Post-Doc Research Fellowships</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Institutional</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Mission & Vision</a></li>
+            <li><a href="about.html">Governance & Faculty</a></li>
+            <li><a href="about.html">Accreditations & NAAC</a></li>
+            <li><a href="about.html">Research Labs & Patents</a></li>
+            <li><a href="contact.html">Admissions Procedure</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Stay Informed</h4>
+          <p>Subscribe to our quarterly research digest, scholarship announcements, and seminar bulletins.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your institutional email" required>
+            <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+          <div style="margin-top: 1rem; font-size: 0.8rem; color: var(--neutral-500);">
+            <i class="fa-solid fa-lock"></i> Zero spam. Strictly academic announcements.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 education.in. All statutory and institutional rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Charter</a>
+          <a href="#">Terms of Admission</a>
+          <a href="#">Mandatory Disclosures</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactivity Scripts for Courses Catalog -->
+  <script>
+    // Navigation Toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      const icon = mobileToggle.querySelector('i');
+      if (navMenu.classList.contains('open')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    });
+
+    // Sticky Navbar
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('mainHeader');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Dynamic Filter & Search System
+    const searchInput = document.getElementById('courseSearchInput');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const courseCards = document.querySelectorAll('.course-card');
+    const filterStatusText = document.getElementById('filterStatusText');
+    const noResultsBox = document.getElementById('noResultsBox');
+    const resetSearchBtn = document.getElementById('resetSearchBtn');
+
+    let currentCategory = 'all';
+    let currentSearchTerm = '';
+
+    function filterCourses() {
+      let visibleCount = 0;
+
+      courseCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const keywords = card.getAttribute('data-keywords') ? card.getAttribute('data-keywords').toLowerCase() : '';
+        const title = card.querySelector('.course-title').textContent.toLowerCase();
+        const description = card.querySelector('.course-description').textContent.toLowerCase();
+
+        const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+        const matchesSearch = !currentSearchTerm ||
+          title.includes(currentSearchTerm) ||
+          description.includes(currentSearchTerm) ||
+          keywords.includes(currentSearchTerm);
+
+        if (matchesCategory && matchesSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResultsBox.style.display = 'block';
+      } else {
+        noResultsBox.style.display = 'none';
+      }
+
+      filterStatusText.innerHTML = `Showing <strong>${visibleCount} program${visibleCount === 1 ? '' : 's'}</strong> ${currentCategory !== 'all' ? `in <em>${currentCategory}</em>` : 'across all departments'}.`;
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.getAttribute('data-filter');
+        filterCourses();
+      });
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      currentSearchTerm = e.target.value.toLowerCase().trim();
+      filterCourses();
+    });
+
+    resetSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      currentSearchTerm = '';
+      currentCategory = 'all';
+      filterButtons.forEach(b => {
+        b.classList.remove('active');
+        if (b.getAttribute('data-filter') === 'all') b.classList.add('active');
+      });
+      filterCourses();
+    });
+
+    // Syllabi Catalog Data
+    const courseCatalog = {
+      aiml: {
+        title: "B.Tech in Artificial Intelligence & Machine Learning",
+        badge: "ABET & AICTE Aligned",
+        semesters: [
+          { title: "Year 1: Mathematical Rigor & Code Mastery", modules: ["Multivariable Calculus & Differential Equations", "Data Structures & Computational Complexity", "Python & C++ Systems Programming", "Hardware Engineering & Logic Gates"] },
+          { title: "Year 2: Foundations of Machine Intelligence", modules: ["Probability Models & Bayesian Inference", "Deep Neural Networks with PyTorch", "Computer Vision & Object Localization", "Relational & NoSQL Database Clusters"] },
+          { title: "Year 3: Advanced Architectures & Systems", modules: ["Transformers, LLMs & Prompt Engineering", "Autonomous Robotics Kinematics & ROS", "MLOps, Kubernetes & Cloud Pipelines", "AI Ethics & Algorithmic Fairness"] },
+          { title: "Year 4: Capstone Industry Practicum", modules: ["8-Month Full-time Corporate Internship", "Major Research Thesis Defense", "Intellectual Property & Patent Filings"] }
+        ]
+      },
+      cyber: {
+        title: "B.Tech in Cybersecurity & Cloud Systems",
+        badge: "Government & Industry Certified",
+        semesters: [
+          { title: "Year 1: Operating Systems & Network Protocols", modules: ["Linux Kernel Internals & Shell Scripting", "TCP/IP Protocol Suite & Network Architectures", "Discrete Mathematics & Cryptography Prelims", "Secure Software Development Lifecycle"] },
+          { title: "Year 2: Defensive & Offensive Cyber Ops", modules: ["Applied Cryptography & Public Key Infrastructure", "Offensive Penetration Testing & Exploit Analysis", "Cloud Architecture (AWS & Azure Solutions)", "SOC Operations & Threat Hunting"] },
+          { title: "Year 3: Zero Trust & Enterprise Defense", modules: ["Zero Trust Network Architectures", "Incident Response & Digital Forensics", "Identity & Access Management (IAM)", "International Cyber Law & GDPR Standards"] },
+          { title: "Year 4: Capstone Security Audit", modules: ["Live Red-Team vs Blue-Team Simulation", "Full-time Industry Security Internship", "Enterprise Security Architecture Thesis"] }
+        ]
+      },
+      mba: {
+        title: "Global Executive MBA in Digital Strategy",
+        badge: "AACSB Aligned",
+        semesters: [
+          { title: "Year 1: Executive Foundation & Financial Mastery", modules: ["Managerial Economics & Strategy Modeling", "Corporate Finance & Capital Markets", "High-Performance Leadership & Change Management", "Marketing in the Data-Driven Era"] },
+          { title: "Year 2: Digital Transformation & Silicon Valley Track", modules: ["Platform Economics & Network Effects", "Corporate Venture Capital & M&A Strategy", "Silicon Valley 2-Week Residency & Investor Pitch", "Capstone Enterprise Consulting Project"] }
+        ]
+      },
+      bba: {
+        title: "BBA in International Business & FinTech",
+        badge: "Global Dual Degree Track",
+        semesters: [
+          { title: "Year 1: Business Fundamentals & Macroeconomics", modules: ["Principles of Management & Organizational Dynamics", "Global Trade Law & International Economics", "Financial Accounting & Business Statistics", "Digital Business Technologies"] },
+          { title: "Year 2: Corporate Finance & Global Logistics", modules: ["International Marketing & Supply Chain Operations", "FinTech Systems & Blockchain Frameworks", "Commercial Banking & Wealth Management", "Summer Internship in Corporate Finance"] },
+          { title: "Year 3: Global Immersion & Capstone", modules: ["Optional UK University Exchange Semester", "Strategic Management & Corporate Governance", "Student-Run Venture Portfolio Defense"] }
+        ]
+      },
+      datasci: {
+        title: "M.Sc in Data Science & Quantitative Finance",
+        badge: "Wall Street & Dalal Street Aligned",
+        semesters: [
+          { title: "Year 1: Stochastic Calculus & Big Data", modules: ["Stochastic Calculus for Financial Markets", "Distributed Computing with Apache Spark & Ray", "Econometric Modeling & Time-Series Forecasting", "Derivatives Pricing & Risk Hedging"] },
+          { title: "Year 2: Algorithmic Execution & Capstone", modules: ["High-Frequency Algorithmic Execution Systems", "Machine Learning for Quantitative Portfolio Management", "Bloomberg Terminal Hands-on Simulations", "Master's Thesis with Institutional Asset Managers"] }
+        ]
+      },
+      bscdata: {
+        title: "B.Sc (Hons) in Applied Data Analytics & AI",
+        badge: "Industry Certified",
+        semesters: [
+          { title: "Year 1: Computational Statistics & Python", modules: ["Descriptive & Inferential Statistics", "Python for Scientific Computing", "SQL & Relational Database Management", "Data Ethics & Privacy Regulations"] },
+          { title: "Year 2: Machine Learning & Visualization", modules: ["Predictive Machine Learning Algorithms", "Tableau & PowerBI Advanced Dashboards", "Data Warehousing with Snowflake", "Feature Engineering & Exploratory Data Analysis"] },
+          { title: "Year 3: Industrial Capstone", modules: ["Applied Business Analytics Case Studies", "Industry Internship with Analytics Consultancy", "Live Capstone Portfolio Project"] }
+        ]
+      },
+      bdes: {
+        title: "B.Des in UX Architecture & Interaction Design",
+        badge: "Studio Led Program",
+        semesters: [
+          { title: "Year 1: Design Foundations & Visual Language", modules: ["Design Thinking & Creative Problem Solving", "Visual Semiotics, Typography & Color Systems", "Human Perception & Cognitive Ergonomics", "Rapid Paper & Digital Prototyping"] },
+          { title: "Year 2: Interaction Systems & Wireframing", modules: ["Information Architecture & User Journey Mapping", "Figma & Design Systems at Scale", "User Research Methodologies & Usability Testing", "Front-end Fundamentals for Designers (HTML/CSS)"] },
+          { title: "Year 3: Spatial Computing & Enterprise UX", modules: ["AR/VR Spatial Interface Design", "Enterprise SaaS Complexity Management", "Voice & Multimodal Conversational UI", "Summer Design Studio Apprenticeship"] },
+          { title: "Year 4: Professional Portfolio & Capstone", modules: ["Industry Sponsored Design Degree Project", "Juried Portfolio Exhibition", "Design Leadership & Intellectual Property"] }
+        ]
+      },
+      robotics: {
+        title: "M.Tech in Robotics & Autonomous Hardware",
+        badge: "Advanced Research Track",
+        semesters: [
+          { title: "Year 1: Kinematics & Embedded Computing", modules: ["Rigid Body Kinematics & Dynamics", "Embedded Linux & Real-Time Operating Systems", "Computer Vision for Mobile Robots & LiDAR", "Control Systems & Feedback Architecture"] },
+          { title: "Year 2: Autonomous Navigation & Thesis", modules: ["Simultaneous Localization and Mapping (SLAM)", "Reinforcement Learning for Robotic Control", "Industrial Collaborative Robotics (Cobots)", "Master of Technology Research Thesis"] }
+        ]
+      },
+      health: {
+        title: "Post-Graduate Diploma in Healthcare Leadership",
+        badge: "Executive Weekend Track",
+        semesters: [
+          { title: "Modules 1-3: Healthcare Economics & Compliance", modules: ["Healthcare Systems & Comparative Global Policy", "Hospital Operations Management & Patient Safety", "Health Informatics, EMR Systems & Data Security"] },
+          { title: "Modules 4-6: Digital Health & Strategic Hospital Leadership", modules: ["AI Diagnostics & Remote Care Models", "Financial Management for Healthcare Providers", "Strategic Capstone Project in Hospital Quality Audit"] }
+        ]
+      }
+    };
+
+    // Modal Interaction
+    const modal = document.getElementById('curriculumModal');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    const modalTitle = document.getElementById('modalCourseTitle');
+    const modalBadge = document.getElementById('modalBadge');
+    const modalContent = document.getElementById('modalContent');
+
+    document.querySelectorAll('.view-curriculum-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const courseKey = e.currentTarget.getAttribute('data-course');
+        const data = courseCatalog[courseKey];
+        if (data) {
+          modalTitle.textContent = data.title;
+          modalBadge.textContent = data.badge;
+
+          let html = `<p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Official syllabus approved by the Academic Senate for the upcoming academic year.</p>`;
+          data.semesters.forEach(sem => {
+            html += `
+              <div class="syllabus-semester">
+                <h5><i class="fa-solid fa-book-bookmark"></i> ${sem.title}</h5>
+                <ul class="syllabus-modules">
+                  ${sem.modules.map(mod => `<li><i class="fa-solid fa-circle-check" style="color: var(--blue-500); margin-right: 0.35rem; font-size: 0.75rem;"></i> ${mod}</li>`).join('')}
+                </ul>
+              </div>
+            `;
+          });
+          html += `
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Apply for this Degree</a>
+              <button class="btn btn-secondary btn-sm" onclick="showToast('Syllabus PDF downloaded successfully.')"><i class="fa-solid fa-download"></i> Download Syllabus PDF</button>
+            </div>
+          `;
+          modalContent.innerHTML = html;
+          modal.classList.add('active');
+        }
+      });
+    });
+
+    modalCloseBtn.addEventListener('click', () => modal.classList.remove('active'));
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) modal.classList.remove('active');
+    });
+
+    // Toast Notification System
+    function showToast(message) {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      toast.className = 'toast toast-success show';
+      toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 400);
+      }, 4000);
+    }
+
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        showToast('Thank you for subscribing to education.in bulletins!');
+        newsletterForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>
